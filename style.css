@@ -5,13 +5,18 @@ body {
     background-size: 100%;
 }
 
-header {
+/* header {
     position: relative;
     background-color: azure;
-}
+} */
 
 .header-wrapper img {
     margin-left: 690px;
+}
+
+.header-wrapper {
+    position: relative;
+    background-color: azure;
 }
 
 .btn {
@@ -48,6 +53,8 @@ h1 {
     --bs-card-border-radius: 20px;
     margin-top: 50px;
     margin-left: 50px;
+    width: 350px;
+    height: 600px;
 }
 
 .card-wrapper {
@@ -114,4 +121,38 @@ h1 {
 
 .page-link {
     color: white;
+}
+
+@media (max-width:720px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .card-body {
+        width: 100px;
+    }
+
+    .card {
+        width: 300px;
+
+    }
+
+    .card-body {
+        height: 300px;
+    }
+
+    .header-wrapper img {
+        margin-left: 160px;
+    }
+
+    .btn {
+        position: absolute;
+        left: 330px;
+
+    }
+
+    .pagination {
+        padding-top: 2000px;
+        padding-left: 140px;
+    }
 }
